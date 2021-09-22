@@ -1,0 +1,89 @@
+/**************************************************************
+*             Condicionales
+/**************************************************************
+
+// En criollo si pasa algo, ejecuto tal cosa y si no, tal otra
+
+//   true
+if(condicion){
+    sentencia
+} else {
+    sentencia
+}
+
+//Ejemplo invierno -----------------------------------------------------
+
+let frio = false;
+
+if (frio) {
+    console.log("Hace frio me tengo que poner un buzo");
+} else {
+    console.log("No hace falta");
+}
+
+
+// Operadores de comparacion --------------------------------------------
+/*
+
+asignar =
+
+Igual ==
+distinto !=
+mayor >
+menor <
+mayor igual >=
+menor igual <=
+estrictamente igual ===
+estrictamente distinto !==
+
+*/
+//Comparadores compuestos -----------------------------------------------
+/*
+
+&& and Y        (Las condiciones tienen que ser true si o si)
+|| or  o     alt + 124 ||    (Almenos 1 condicion tiene que ser verdade)
+!  sino
+
+*/
+//PRIMERO QUE ME VERIFIQUE EL NOMBRE 
+//SI ESE NOMBRE ES CORRECTO
+//VA AL ASCENSOR Y A SU DEPARTAMENTO
+
+const nombrePersona1 = "julian"
+const nombrePersona2 = "tomas"
+const nombrePersona3 = "pedro"
+
+let nombreDinamico = prompt("¿Cual es tu nombre?")
+let depto = 0
+    //Para pasar todo a minuscula
+    //Para pasar todo a mayuscula
+
+nombreDinamico = nombreDinamico.toLowerCase()
+
+if (nombreDinamico === nombrePersona1 || nombreDinamico === nombrePersona2 || nombreDinamico === nombrePersona3) {
+    console.log(`Podes ingresar ${nombreDinamico}`);
+
+    depto = Number(prompt("¿A que depto vas?"))
+
+    if (depto >= 1) {
+
+        if (depto < 3) {
+            console.log("Anda por el ascensor de la izquierda");
+        } else if (depto > 7) {
+            console.log("Anda por el ascensor de la derecha");
+        } else if (depto === 5) {
+            console.log(`${nombreDinamico} no sos de este piso, andate`);
+        } else {
+            console.log("Espera que lo estan arreglando");
+        }
+
+    } else {
+        console.log("Ese departamento no existe, para casa")
+    }
+
+    depto = 0
+} else {
+    console.log(`No podes ingresar, a ${nombreDinamico} no lo tengo en la lista`);
+}
+
+
