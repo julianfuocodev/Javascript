@@ -1,0 +1,15 @@
+/************************************
+ * Complejidad Temporal -> O( n^2 )
+ * Complejidad Espacial -> O( n )
+ * Espacio Auxiliar -> O( 1 )
+ ************************************/
+
+function linearSearch(arreglo, clave) {                      // tO(n) tO(1)   - eO(n)
+  for (let indice = 0; indice < arreglo.length; indice++) {  // tO(n)         - eO(1)
+    if (arreglo[indice] === clave) {                         // tO(1)         
+      return indice;
+    }
+  }
+  return -1;
+}
+
