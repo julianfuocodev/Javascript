@@ -1,0 +1,64 @@
+/************************************************************************
+****************************************************************************
+
+Una variable es una asignacion a un espacio de memoria
+
+¿Como declaramos una variable?
+
+(constructor) (NombreDeLaVariable)  =  (ValorDeLaVariable)
+
+
+*****************************    Variable con constructor VAR tiene las siguientes caracteristicas
+
+1-Admite redeclaracion
+
+var nombre = "julian";
+var nombre = "tomas";
+nombre => "tomas";
+
+2-Admite redefinicion
+
+var apellido = "Fuoco"
+apellido = "Juarez"
+apellido => "Juarez"
+
+3-Alcance Global
+Cuando declaro una variable con VAR su scope SIEMPRE es GLOBAL
+
+4- Se ve afectada por el hoisting 
+
+
+****************************** Variables declaradas con el contructor LET
+
+1- NO admiten redeclaracion
+
+let nombre = "julian";
+let nombre = "tomas"; => ERROR nombre ya esta declarado;
+
+2- Admite redefinicion
+
+let apellido = "Fuoco"
+apellido = "Juarez"
+apellido => "Juarez"
+
+3-No admite alcance global pero, su alcance se encuentra enmarcado en relacion al entorno donde se declaro
+
+4- No se ve afectada por el hoisting 
+
+****************************** Variables declaradas con CONST ----- constante
+
+1- NO admiten redeclaracion
+
+const nombre = "julian";
+const nombre = "tomas"; => ERROR nombre ya esta declarado;
+
+2- NO admite redefinicion
+
+const apellido = "Fuoco"
+apellido = "Juarez"  => ERROR apellido es una constante, no podemos modificarle el valor
+
+3-No admite alcance global pero, su alcance se encuentra enmarcado en relacion al entorno donde se declaro
+
+4- No se ve afectada por el hoisting 
+
+5- Admite redefiniciones en sus componentes internos
