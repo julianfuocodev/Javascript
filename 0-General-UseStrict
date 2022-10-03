@@ -1,0 +1,7 @@
+//El modo use strict nos permite evitar errores que podamos llegar a tener, como la declaracion de variables globales mediante el hoisting
+
+'use strict';
+pi = 3.1416;
+console.log(pi);
+
+console.log(myFunction());
