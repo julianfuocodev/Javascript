@@ -1,0 +1,6 @@
+//Permite concatenar logica y string multilinea
+
+var nombre = "Andres"
+var edad = 23
+
+var mensaje = `Mi nombre es ${nombre} y tengo ${edad} años.`
