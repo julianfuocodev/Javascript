@@ -1,0 +1,26 @@
+// Ejemplo de Variables
+
+var a; // declarando
+var b = 'b'; // declaramos / asignamos
+b = 'bb'; // re-asignacion
+var a = 'aa'; // re-declaracion
+
+
+// Global Scope
+var fruit = 'Apple'; // global
+console.log(fruit); //Se visualiza en todos los scope por que es global
+
+function bestFruit() {
+  console.log(fruit); 
+}
+
+bestFruit();
+
+
+function countries() {
+  country = 'Colombia'; // Global !!
+  console.log(country);
+}
+
+countries();
+console.log(country);
