@@ -1,0 +1,22 @@
+//Solo una interfaz sintactica de los prototipos
+
+class Calculator {
+    // Constructor
+    constructor() {
+        // Atributos
+        this.valueA = 0
+        this.valueB = 0
+    }
+    
+    // Método
+    suma(num1, num2){
+        this.valueA = num1
+        this.valueB = num2
+        return this.valueA + this.valueB
+    }
+}
+
+// Instancia
+const calculadora = new Calculator()
+
+calculadora.suma(2,2) //4
