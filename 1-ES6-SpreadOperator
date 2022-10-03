@@ -1,0 +1,28 @@
+//---------------SpreadOperator---------------------
+
+// Para strings
+const array = [ ..."Hola"]    // [ 'H', 'o', 'l', 'a' ]
+
+// En arrays
+const otherArray = [ ...array]   //[ 'H', 'o', 'l', 'a' ]
+
+// ------ Utilidad -------
+
+const originalArray = [1,2,3,4,5]
+const copyArray = originalArray //Copiamos array, pero tambien referencia en memoria
+copyArray[0] = 0
+
+originalArray // [0,2,3,4,5]
+originalArray === copyArray  // true
+
+//Buena practica
+
+const originalArray = [1,2,3,4,5]
+const copyArray = [...originalArray]
+copyArray[0] = 0
+
+originalArray // [1,2,3,4,5]
+copyArray // [0,2,3,4,5]
+originalArray === copyArray  // false
+
+//Lo mismo para objetos
