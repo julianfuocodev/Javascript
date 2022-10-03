@@ -1,0 +1,40 @@
+//Variables Redeclaraciones
+
+//---------VAR-----------
+
+var firstName; // Undefined -> Declarada , no asignada
+firstName = 'Oscar'; // Asignada
+console.log(firstName);  //ok
+
+var lastName = "David"; // Declarada y asignada
+lastName = 'Ana'; // Re-asignada
+console.log(lastName); //ok
+
+var secondName = 'David'; // Declarada y asignada
+var secondName = 'Ana'; // Re-asignada y Re-declarada
+console.log(secondName); //ok
+
+
+//--------LET----------
+
+let fruit = 'Apple' // Declarada y asignada
+fruit = 'Kiwi'; // Re-asignada
+console.log(fruit); //ok
+
+let fruit = 'Banana'; //Re-declarada y Re-asignada
+console.log(fruit); //ok
+
+
+//--------CONST----------
+
+const animal = 'dog'; // Declarada y asignada
+// animal = 'cat'; // Re-asignado NO
+const animal = 'Snake'; //Re-declarada y Re-asignada
+console.log(animal); //ok
+
+const vehicles = [];
+vehicles.push("🚗");
+console.log(vehicles);
+
+vehicles.pop();
+console.log(vehicles);
