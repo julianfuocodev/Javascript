@@ -1,0 +1,14 @@
+//Los generadores son funciones especiales que pueden pausar su ejecución, luego volver al punto donde se quedaron, recordando su scope y seguir retornando valores.
+
+function* generator(){
+    yield 1
+    yield 2
+    yield 3
+}
+
+const generador = generator()
+
+generador.next().value //1
+generador.next().value //2
+generador.next().value //3
+generador.next() // {value: undefined, done: true}
