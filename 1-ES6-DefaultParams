@@ -1,0 +1,14 @@
+// OLD
+
+function sumar(number1, number2){
+  var Rnumber1 = number1 || 0 
+  var Rnumber2 = number2 || 0
+  
+  return Rnumber1 + Rnumber2
+}
+
+//NEW
+
+function sumar(number1 = 0, number2 = 0){
+  return number1 + number2
+}
