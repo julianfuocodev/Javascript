@@ -1,0 +1,7 @@
+const usuario = { nombre: "Andres", edad: 23, plataforma: "Google" }
+
+const { nombre, edad, plataforma } = usuario  //Destructuring
+
+console.log(nombre)  // 'Andres' 
+console.log(edad)  // 23
+console.log(plataforma)  // 'Google'
