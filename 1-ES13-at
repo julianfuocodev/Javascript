@@ -1,0 +1,7 @@
+const array = ["one", "two", "three", "four", "five", "six"];
+
+array.at() // == array[0]
+array.at(1) // == array[1]
+array.at(2) // == array[2]
+//....
+array.at(-1) // == array[array.lenght - 1] el ultimo
