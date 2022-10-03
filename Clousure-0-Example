@@ -1,0 +1,21 @@
+//La clouser existe siempre que exista una funcion anidada.
+
+
+function moneyBox() {
+  let saveCoins = 0; // Variable en scope de funcion
+  function countCoins(coins) { // funcion anidada
+    saveCoins += coins;
+    console.log(`MoneyBox: $${saveCoins}`)
+  }
+  return countCoins;
+}
+
+const myMoneyBox = moneyBox(); // Crea variable con funcion y inicializa la variable que recuerda el valor 0
+myMoneyBox(5);
+myMoneyBox(5);
+myMoneyBox(15);
+
+const moneyBoxAna = moneyBox();
+moneyBoxAna(10);
+moneyBoxAna(20);
+moneyBoxAna(5);
