@@ -1,0 +1,8 @@
+const test = {
+    a: 1,
+    b: 2
+}
+
+Object.keys(test) //  [ 'a', 'b']
+Object.values(test) //  [ 1, 2]
+Object.entries(test) //  [ ['a', 1], ['b', 2]]
