@@ -1,0 +1,14 @@
+//Scope Function
+
+function greeting() {
+  let userName = 'Ana'; // Se Declara y Asigna dentro de una funcion
+  console.log(userName); // Se accede dentro de la misma
+
+  if (userName === 'Ana') {
+    console.log(`Hello ${userName}!`) // Se accede dentro de la anidacion
+  }
+
+}
+
+greeting(); //Se visualiza
+console.log(userName); // No se puede acceder globalmente
