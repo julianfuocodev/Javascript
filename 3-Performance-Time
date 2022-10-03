@@ -1,0 +1,28 @@
+//Formas de mediar la complejidad temporal de nuestro algoritmo
+
+//------------Funcion------------
+
+function contar(n){
+    for (let i=0; i < n; i++){
+        console.log(i)
+    }
+}
+
+//---------performance.now------------
+
+// Posiblemente hay que importar el modulo ---- const { performance } = require("node:perf_hooks")
+
+
+const tiempoInicial = performance.now() //Abro el algoritmo a analizar
+contar(5) // Algoritmo
+const tiempoFinal = performance.now() //Cierro el algoritmo a analizar
+const duracion = tiempoFinal - tiempoInicial //Defino diferencia de tiempo
+console.log(duracion) //Muestro total
+
+//---------console.time------------
+
+console.time("duración")
+contar(5) // Algoritmo
+console.timeEnd("duración")
+
+// Algunas herramientas que nos pueden ayudar https://radiant-anchorage-11930.herokuapp.com/
