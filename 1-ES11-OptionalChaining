@@ -1,0 +1,8 @@
+// El ? me permite definir al valor como opcional y que no rompa la busqueda
+
+const users = {
+    julian: {
+        country: "Arg"
+    }
+}
+console.log(users.julian?.redes);
