@@ -1,0 +1,9 @@
+//Scope Block
+
+if (true){
+  saludo = "hola" // Scope global
+  let despedida = "chao" // Scope bloque
+}
+
+console.log(saludo) // Hola -> Global
+console.log(despedida) // ReferenceError: despedida is not defined
